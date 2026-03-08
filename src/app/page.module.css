@@ -121,12 +121,15 @@
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-main);
   transition: all 0.3s;
 }
 
 .projectLinks a:hover {
   background: var(--accent);
+  border-color: var(--accent-light);
   color: white;
   box-shadow: 0 0 15px var(--accent-glow);
   transform: translateY(-3px);
@@ -179,8 +182,8 @@
   justify-content: center;
   gap: 1rem;
   padding: 1.5rem 1rem;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 16px;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   height: 100%;
@@ -196,7 +199,7 @@
 .skillIcon {
   font-size: 3rem;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  filter: grayscale(0.8) opacity(0.6);
+  filter: grayscale(0.2) opacity(0.9);
 }
 
 .skillBadge:hover .skillIcon {
@@ -207,7 +210,7 @@
 .skillName {
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--text-muted);
+  color: var(--text-main);
   transition: color 0.3s ease;
   text-align: center;
 }
