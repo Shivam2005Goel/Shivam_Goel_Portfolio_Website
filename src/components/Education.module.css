@@ -1,0 +1,119 @@
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timelineLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent), var(--accent-light));
+  transform-origin: top;
+  box-shadow: 0 0 10px var(--accent-glow);
+}
+
+@media (min-width: 768px) {
+  .timelineLine {
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: top center;
+  }
+}
+
+.timelineItem {
+  position: relative;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .timelineItem {
+    width: 50%;
+    padding-right: 3rem;
+    left: 0;
+  }
+
+  .timelineItem:nth-child(even) {
+    left: 50%;
+    padding-right: 0;
+    padding-left: 3rem;
+  }
+}
+
+.timelineDot {
+  position: absolute;
+  top: 0;
+  left: 14px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 15px var(--accent-glow), 0 0 30px rgba(0, 240, 255, 0.3);
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .timelineDot {
+    left: auto;
+    right: -7px;
+  }
+
+  .timelineItem:nth-child(even) .timelineDot {
+    left: -7px;
+    right: auto;
+  }
+}
+
+.timelineContent {
+  padding: 2rem;
+  margin-left: 3rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timelineContent:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px var(--accent-glow);
+  border-color: var(--accent);
+}
+
+@media (min-width: 768px) {
+  .timelineContent {
+    margin-left: 0;
+  }
+}
+
+.date {
+  font-size: 0.875rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.degree {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.institution {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.score {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  font-weight: bold;
+  color: var(--accent-light);
+  font-size: 0.95rem;
+}
