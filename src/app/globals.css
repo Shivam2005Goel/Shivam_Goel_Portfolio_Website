@@ -30,18 +30,10 @@ body {
   overflow-x: hidden;
   position: relative;
   min-height: 100vh;
-  cursor: default;
+  cursor: auto;
 }
 
-/* Hide default cursor on desktop */
-@media (min-width: 1024px) {
-  body {
-    cursor: none;
-  }
-  a, button, [role="button"] {
-    cursor: none;
-  }
-}
+/* Removed default cursor hiding to ensure visibility everywhere */
 
 ::-webkit-scrollbar {
   width: 8px;

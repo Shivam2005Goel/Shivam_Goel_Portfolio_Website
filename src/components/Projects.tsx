@@ -18,7 +18,7 @@ const projectsData = [
     tech: ["FastAPI", "Next.js", "Neo4j", "Redis", "Gemini Pro", "Docker"],
     github: "https://github.com/Shivam2005Goel/Intellitrace_hackathon",
     live: "#",
-    initialLikes: 142,
+    initialLikes: 0,
   },
   {
     title: "GyanGrow",
@@ -28,7 +28,7 @@ const projectsData = [
     tech: ["Next.js", "React 19", "Gemini AI", "Vapi", "Tesseract.js"],
     github: "https://github.com/Shivam2005Goel/GyanGrow",
     live: "#",
-    initialLikes: 215,
+    initialLikes: 0,
   },
   {
     title: "Clinical Data Monitoring",
@@ -38,7 +38,7 @@ const projectsData = [
     tech: ["Numpy", "Pandas", "Machine Learning", "Supabase"],
     github: "https://github.com/Shivam2005Goel/Clinical_Data_Analysis_Hackathon.git",
     live: "#",
-    initialLikes: 89,
+    initialLikes: 0,
   },
   {
     title: "Go-Green",
@@ -48,7 +48,7 @@ const projectsData = [
     tech: ["React", "Node.js", "PostgreSQL", "AWS RDS", "CloudFront"],
     github: "https://github.com/Shivam2005Goel/Sustainability_Carbon_hackathon.git",
     live: "#",
-    initialLikes: 112,
+    initialLikes: 0,
   },
 ];
 
